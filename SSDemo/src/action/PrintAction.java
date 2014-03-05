@@ -21,7 +21,8 @@ public class PrintAction {
 	public void Print1(){
 		p.print();
 	}
-	public void Print2(String str){
+	public void Print2(){
+		String str=getMessage();
 		p.print(str);
 	}
 	/**
