@@ -3,6 +3,9 @@
  */
 package action;
 
+
+import com.opensymphony.xwork2.ActionSupport;
+
 import service.Print;
 import service.PrintImpl;
 
@@ -10,7 +13,7 @@ import service.PrintImpl;
  * @author DUCHAO
  *
  */
-public class PrintAction {
+public class PrintAction  extends ActionSupport {
 	
 	private Print p;
 	private String message;
@@ -18,12 +21,14 @@ public class PrintAction {
 //	public PrintAction(){
 //		p=new PrintImpl();
 //	}
-	public void Print1(){
+	public String Print1(){
 		p.print();
+		return SUCCESS;
 	}
-	public void Print2(){
+	public String Print2(){
 		String str=getMessage();
 		p.print(str);
+		return SUCCESS;
 	}
 	/**
 	 * @return the message

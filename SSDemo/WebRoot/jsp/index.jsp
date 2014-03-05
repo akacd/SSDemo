@@ -6,7 +6,7 @@
 	</head>
 
 	<body>
-		<b> <s:property value="message" />
+		<b><s:property value="message"/>
 		</b>
 	</body>
 </html>
